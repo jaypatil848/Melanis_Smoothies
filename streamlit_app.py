@@ -48,4 +48,5 @@ if ingredients_list:
 #New section to display fruityvise nutrition information  
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response)
+#st.text(fruityvice_response.jason())
+fv_dv=st.dataframe(data=frutyvice_response.jason(),use_container_width=True)
